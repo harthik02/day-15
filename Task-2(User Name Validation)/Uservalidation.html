@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Validation</title>
+</head>
+<body>
+    <h1> User Validation </h1>
+    <form action="./Register.html" method="get">
+        <fieldset>
+            <legend>
+                Login
+            </legend>
+            <label for="user"> USER NAME </label>
+            <input type="text" name="username" id="user"
+            required
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%&]){8,16}"
+            title="The user name should contain atleast 1 small. 1 Capital and 1 Special charcter">
+            <br>
+            <label for="password"> PASSWORD </label>
+            <input type="password" name="pwd" id="password"
+            required
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@!#$%^&]){8,16}"
+            title="The password must be specified format">
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
